@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Primeiras práticas com JavaScript</h1>
+    <script>
+        window.alert('Olá, Mundo!');//Exibe apenas um alerta básico
+        confirma = window.prompt('Fala teu nome ent');/*Exibe um prompt com um input onde o cliente pode escrever, 
+        neste exemplo eu criei uma variável que puxasse o valor desse prompt,
+        ou seja, oque foi escrito*/
+        confirma2 = window.confirm(confirma+ ", você ta curtindo a página?");/*Exibe uma caixa tipo alert onde eu tenho a opção de confirmar. Aqui eu exibi uma mensagem utilizando o valor da variável "confirma".*/
+        if(confirma2 == true){
+            window.alert(confirma+', deu certo'); /*Neste exemplo eu criei a variável pro confirm e
+            logo depois usei o controle de fluxo if/else.*/
+        }
+        else{
+            window.alert(confirma+', deu errado');
+        }
+    </script>
+</body>
+</html>
