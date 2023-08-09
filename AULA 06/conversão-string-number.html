@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //conversão de string para número
+        var n1 = Number(window.prompt('Digite um número')) //Forma mais moderna, onde o javascript vai analisar se é float ou int (real ou inteiro) 
+        var n2 = Number.parseInt(window.prompt('Digite mais um número')) //Forma padrão de declarar que a variável será inteira
+        var n3 = Number.parseFloat(window.prompt('Digite um último número')) //Forma padrão de declarar que a variável será float (real)
+        var resultado = n1 + n2 + n3
+
+        //conversão de número para string
+        strN1 = String(n1)
+        stN2 = String(n2)
+        strN3 = n3.toString()
+        var resultadoStr = strN1 + strN2 + strN3
+
+        window.alert('A soma dos números é ' + resultado)
+        window.alert(`A soma das strings é ${resultadoStr}`)
+    </script>
+</body>
+</html>

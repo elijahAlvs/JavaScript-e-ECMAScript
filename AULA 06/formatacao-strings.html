@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Digite seu nome")
+        document.write(`Seu nome tem ${nome.length} letras.<br/>`) //document.write vai escrever no documento
+        document.write(`Seu nome em ${nome.toUpperCase()} letras maiúsculas.<br/>`)
+        document.write(`Seu nome em ${nome.toLowerCase()} letras minúsculas.`)
+
+        /*
+        <br/> -- Quebra de linha 
+
+        Formatação de Strings
+        var.length -- quantos caracteres a string tem
+        var.toUpperCase() -- tudo maiúsculo
+        var.toLowerCase() -- tudo minúsculo
+        */
+    </script>
+</body>
+</html>
