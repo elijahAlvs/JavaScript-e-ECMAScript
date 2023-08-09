@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos</title>
+</head>
+<body>
+    <script>
+        /*
+        Operadores aritméticos:
+        + = soma ----------------------------------------------------- 5 + 2 = 7
+        - = subtração ------------------------------------------------ 5 - 2 = 3
+        * = multiplicação -------------------------------------------- 5 * 2 = 10
+        / = divisão real --------------------------------------------- 5 / 2 = 2.5
+        % = divisão inteira (operador de resto da divisão inteira) --- 5 % 2 = 1
+        ** = potência (elevado a tal n°) ----------------------------- 5 ** 2 = 25
+
+        Ordem de precedência (De cima para baixo, maior para menor):
+        ()
+        **
+        8  /  %
+        +  -
+        */
+
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+
+        document.write(`Var a = ${a}<br/>`)
+        document.write(`Var b = ${b}<br/>`)
+        document.write(`Var c = ${c}<br/>`)
+        document.write(`Var d = ${d}<br/>`)
+        document.write(`Var e = ${e}<br/>`)
+        document.write(`Var f = ${f}<br/>`)
+
+    </script>
+</body>
+</html>
