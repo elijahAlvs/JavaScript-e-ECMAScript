@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de elemento por querySelector</title>
+    <style>
+        body{
+            background-color: deepskyblue;
+            font-size: 30px  ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <h2>Document Object Model</h2>
+    <p id="p1">Aqui vai o resultado</p>
+    <p class="p2">Aprendendo a usar o <strong><abbr title="Document Object Model">DOM</abbr></strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <br>
+    <script>
+        //método mais recente
+        // comando: querySelector('')
+        var p1 = window.document.querySelector('p#p1') //Pegou o <p>Aqui vai o resultado</p>
+        window.document.write(`Ta escrito assim: ${p1.innerText}<br>`) 
+
+        //Também é possível mudar o style do elemento
+        var p2 = document.querySelector('p.p2')
+        p2.style.color="red"
+        document.write(`InnerText: ${p2.innerText}<br>`) // InneText bota só o texto /// Ótimo para usar em alert
+        document.write(`InnerHTML: ${p2.innerHTML}`) // InnerHTML mantém as caractrísticas do código, como as tags <strong> e <abbr>. /// Péssimo para usar em alert e coisas do tipo, pois exibe o código e as tags HTML. No lugar é recomendado usar o innerText.
+    </script>
+</body>
+</html>
