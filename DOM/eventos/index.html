@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div#area{
+            width: 350px;
+            height: 350px;
+            background-color: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Além de poder adicionar diretamente no html do elemento,
+        também é possível adicionar uma function através do script.
+    -->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        <p>Interaja</p>
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        //addEventListener serve para adicionar um evento DOM a um elemento html/css e atribuí-lo uma função.
+        a.addEventListener('mousemove',mover)
+        a.addEventListener('mousedown', pressionar)
+        a.addEventListener('mouseup', soltar)
+
+        function clicar(){
+            a.innerHTML = 'Clicou'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerHTML = 'Entrou'
+        }
+        function sair(){
+            a.innerHTML = 'Saiu'
+            a.style.background = 'cyan'
+            a.style.color = 'black'
+        }
+        function mover(){
+            a.style.color = 'blue'
+        }
+        function pressionar(){
+            a.innerHTML = "Pressionando"
+        }
+        function soltar(){
+            a.innerHtml = "Soltei"
+        }
+
+
+    </script>
+</body>
+</html>
