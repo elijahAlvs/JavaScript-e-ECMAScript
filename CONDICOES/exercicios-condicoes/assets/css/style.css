@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f0f0;
+}
+header{
+    text-align: center;
+    font-size: 22px;
+    padding: 40px;
+}
+main{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: 1px 1px 13px rgb(42, 42, 42);
+}
+main > div#containerAll > div#txt{
+    margin-bottom: 70px;
+}
+main > div#containerAll > div#txt > h2#txtHora{
+    font-size: 25px;
+    text-align: center;
+}
+main > div#containerAll > div#img{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+footer{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+}
