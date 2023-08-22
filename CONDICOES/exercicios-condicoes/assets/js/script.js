@@ -5,9 +5,11 @@ var textoHorario = document.getElementById("txtHora")
 
 if(horas >= 6 && horas <= 12){
     console.log('Manhã')
+    textoHorario.innerHTML = `Agora são ${horas} horas`
     
 }else if(horas >= 13 && horas <= 18){
     console.log('Tarde')
+    textoHorario.innerHTML = `Agora são ${horas} horas`
 }else if((horas >= 19 && horas <=23) || (horas >= 0 && horas <= 5)){
 
     console.log('Noite')
@@ -15,4 +17,5 @@ if(horas >= 6 && horas <= 12){
     textoHorario.innerHTML = `Agora são ${horas} horas`
 }else{
     console.log('Horário inválido')
+    textoHorario.innerHTML = `Horário inválido`
 }
