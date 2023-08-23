@@ -1,6 +1,5 @@
 var time = new Date()
 var horas = time.getHours()
-
 var textoHorario = document.getElementById("txtHora") 
 var imagem = document.getElementById('img')
 var mainHTML = document.querySelector('main')

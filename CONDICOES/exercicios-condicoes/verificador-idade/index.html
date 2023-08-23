@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <div id="containerAll">
+            <div id="containerDate">
+                <label for="iDate">Ano de nascimento: </label>
+                <input type="number" name="nDate" id="iDate" max="4">
+            </div>
+            <div id="containerRadio">
+                <p>Sexo: </p>
+                <label for="iMasculino">Masculino</label>
+                <input type="radio" name="iRadio" id="iMasculino">
+                <label for="iFeminino">Feminino</label>
+                <input type="radio" name="iRadio" id="iFeminino">
+            </div>
+            <div id="button">
+                <button onclick="verificarIdade()">Verificar</button>
+            </div>
+            <div id="img">
+                <p></p>
+            </div>
+            <p>Preencha os dados acima para ver o resultado</p>
+            </div>
+    </main>
+    <footer>
+        <h2>&copy;Elias Alves Lima</h2>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
