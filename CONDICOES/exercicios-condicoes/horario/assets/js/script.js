@@ -9,9 +9,9 @@ if(horas >= 6 && horas <= 12){
     console.log('Manhã')
     textoHorario.innerHTML = `Agora são ${horas} horas`
     //Estilos
-    document.body.style.background = '#F82A2AD6'
-    mainHTML.style.background = '#FFA74D'
-    imagem.style.background = '#F9C784'
+    document.body.style.background = '#0090FED6'
+    mainHTML.style.background = '#FFAE00'
+    imagem.style.background = '#CCF000'
 
 }else if(horas >= 13 && horas <= 18){
     console.log('Tarde')
@@ -25,9 +25,9 @@ if(horas >= 6 && horas <= 12){
     console.log('Noite')
     textoHorario.innerHTML = `Agora são ${horas} horas`
     //Estilos
-    document.body.style.background = '#465775'
-    mainHTML.style.background = '#FFA74D'
-    imagem.style.background = '#F9C784'
+    document.body.style.background = '#3B3FAC'
+    mainHTML.style.background = '#465775'
+    imagem.style.background = '#6520A2'
     
 }else{
     console.log('Horário inválido')
