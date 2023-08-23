@@ -22,24 +22,42 @@ main{
     align-items: center;
 }
 div#containerAll{
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 100px;
     border-radius: 10px;
     background-color: cyan;
-    padding: 40px;
+    padding: 40px 50px 55px;
 }
-div#containerAll > div#containerRadio > p, div#containerAll > div#containerRadio > input {
+div#containerAll > div#containerRadio > p, div#containerAll > div#containerRadio > label {
     display: inline-block;
+}
+label#idate, p#iSexo{
+    font-weight: bold;
+}
+div#containerDate{
+    padding: 8px 0;
+    font-size: 20px;
+}
+div#containerRadio{
+    padding: 8px 0;
+    font-size: 20px;
 }
 div#containerAll > div#button > button {
     display: block;
     margin: auto;
-    width: 100px;
-    height: 30px;
+    width: 100%;
+    padding: 10px 0;
     background-color: bisque;
     border: none;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 19px;
+}
+input{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
 }
 footer{
     text-align: center;
