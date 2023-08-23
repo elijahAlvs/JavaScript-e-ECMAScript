@@ -25,7 +25,7 @@ div#containerAll{
     width: 400px;
     height: 100px;
     border-radius: 10px;
-    background-color: cyan;
+    background-color: rgb(37, 124, 253);
     padding: 40px 50px 55px;
 }
 div#containerAll > div#containerRadio > p, div#containerAll > div#containerRadio > label {
